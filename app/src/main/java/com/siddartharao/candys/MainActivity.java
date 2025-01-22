@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }.start();
 
-        // Generate falling objects
         new Thread(() -> {
             while (!isGameOver) {
                 runOnUiThread(this::generateFallingObject);
@@ -124,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
                 .withEndAction(() -> gameLayout.removeView(object)) // Remove after falling
                 .start();
 
-        // Continuously check collision
         Handler handler = new Handler();
         Runnable checkCollisionTask = new Runnable() {
             @Override
