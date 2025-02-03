@@ -37,6 +37,6 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
-        Log.e("Name","Vaish");
+        Log.e("Name","siddu");
     }
 }
